@@ -22,6 +22,7 @@ public class Sale {
 	private Double amount;
 	private LocalDate date;
 	
+	
 	@ManyToOne
 	@JoinColumn(name = "seller_id")
 	private Seller seller;
@@ -85,11 +86,6 @@ public class Sale {
 	public void setSeller(Seller seller) {
 		this.seller = seller;
 	}
-
-	public Seller getseller() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
 	
 }
+
